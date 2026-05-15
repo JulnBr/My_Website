@@ -26,35 +26,12 @@ Vollständig responsive, SEO-optimiert und mit Blog-Struktur.
 | EmailJS           | Kontaktformular ohne Backend  |
 | marked            | Markdown-Parser für Blog      |
 
-## Lokale Entwicklung
-
-```bash
-# Abhängigkeiten installieren
-npm install
-
-# Dev-Server starten (http://localhost:5173)
-npm run dev
-
-# Produktions-Build erstellen
-npm run build
-
-# Build lokal testen
-npm run preview
-```
 
 ## Deployment auf Vercel
 
 Diese Website ist für ein Deployment auf [Vercel](https://vercel.com) vorbereitet
 (`vercel.json` mit SPA-Rewrites ist enthalten).
 
-1. Repository mit dem Vercel-Account verbinden
-2. Framework: **Vite** wird automatisch erkannt
-3. Build-Command: `npm run build`
-4. Output-Verzeichnis: `dist`
-5. Deploy starten – fertig.
-
-Bei [Netlify](https://www.netlify.com/) funktioniert es analog,
-`public/_redirects` sorgt dort für korrektes Routing.
 
 ## Projektstruktur
 
@@ -98,31 +75,6 @@ Meine_Website/
             ├── react-vs-wordpress.md
             └── checkliste-website-2026.md
 ```
-
-## Anpassungen
-
-### Inhalte ändern
-
-- Hero, Services, FAQ, About: jeweilige Datei unter `src/components/`
-- Blog-Artikel: `.md`-Datei in `src/blog/articles/` anlegen
-- Lokale Landingpages: `cityContent` in `src/pages/LocalLanding.jsx`
-
-### Domain im SEO einsetzen
-
-Vor dem ersten Deployment den Platzhalter `deine-domain.de` durch die echte Domain
-ersetzen, in:
-
-- `index.html` (Canonical, Open Graph, JSON-LD)
-- `public/sitemap.xml`
-- `public/robots.txt`
-
-## EmailJS-Konfiguration
-
-Die Werte für Service-ID, Template-ID und Public Key liegen in
-`src/components/Contact.jsx`. Der Public Key ist – wie der Name sagt – für den
-Frontend-Einsatz gedacht und kann öffentlich sein. Spam-Schutz aktivierst du im
-EmailJS-Dashboard.
-
 ## Lizenz
 
 Persönliches Projekt von Julian Bondarenko.
