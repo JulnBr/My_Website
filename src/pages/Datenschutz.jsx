@@ -42,8 +42,8 @@ export default function Datenschutz() {
               35394 Gießen<br />
               Deutschland<br />
               E-Mail:{' '}
-              <a href="mailto:julianbondarenko@gmail.com" className="text-primary-600 hover:text-primary-700 underline underline-offset-2">
-                julianbondarenko@gmail.com
+              <a href="mailto:info@bondarenko-webentwicklung.de" className="text-primary-600 hover:text-primary-700 underline underline-offset-2">
+                info@bondarenko-webentwicklung.de
               </a>
             </address>
           </section>

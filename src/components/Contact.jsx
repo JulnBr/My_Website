@@ -8,7 +8,7 @@ const EMAILJS_SERVICE_ID  = 'service_5f4i0hl'
 const EMAILJS_TEMPLATE_ID = 'template_58fmdtm'
 const EMAILJS_PUBLIC_KEY  = 'FtRbGr062mv6Ncg9g'
 
-const RECIPIENT_EMAIL = 'julianbondarenko@gmail.com'
+const RECIPIENT_EMAIL = 'info@bondarenko-webentwicklung.de'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })

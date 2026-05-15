@@ -44,10 +44,10 @@ export default function Impressum() {
             <p>
               E-Mail:{' '}
               <a
-                href="mailto:julianbondarenko@gmail.com"
+                href="mailto:info@bondarenko-webentwicklung.de"
                 className="text-primary-600 hover:text-primary-700 underline underline-offset-2"
               >
-                julianbondarenko@gmail.com
+                info@bondarenko-webentwicklung.de
               </a>
             </p>
           </section>
