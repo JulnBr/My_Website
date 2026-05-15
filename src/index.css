@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-slate-800 antialiased bg-white;
+  }
+
+  h1, h2, h3, h4 {
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2;
+  }
+
+  .section-padding {
+    @apply py-20 sm:py-28;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900;
+  }
+
+  .section-subtitle {
+    @apply mt-4 text-lg text-slate-600 max-w-2xl;
+  }
+
+  /* Styling für gerenderten Markdown-Content im Blog */
+  .prose-content h2 {
+    @apply text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4;
+  }
+  .prose-content h3 {
+    @apply text-xl sm:text-2xl font-semibold text-slate-900 mt-10 mb-3;
+  }
+  .prose-content p {
+    @apply text-base sm:text-lg text-slate-700 leading-relaxed;
+  }
+  .prose-content a {
+    @apply text-primary-600 hover:text-primary-700 underline underline-offset-2;
+  }
+  .prose-content strong {
+    @apply font-semibold text-slate-900;
+  }
+  .prose-content ul {
+    @apply list-disc pl-6 space-y-2;
+  }
+  .prose-content ol {
+    @apply list-decimal pl-6 space-y-2;
+  }
+  .prose-content code {
+    @apply bg-slate-100 text-slate-900 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  .prose-content blockquote {
+    @apply border-l-4 border-slate-300 pl-4 italic text-slate-600;
+  }
+}
